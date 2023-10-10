@@ -20,7 +20,10 @@ const page = () => {
         Task =  mainTask.map((t,i)=>{
           return (
             <div className='flex justify-between items-center'>
+           <div className='flex items-center'>
+           <input type='checkBox' className='w-8 h-8 mr-2' />
             <h1>{t.title}</h1>
+           </div>
             <button className=' text-white ml-1 font-bold border-2 bg-slate-400 rounded-xl  py-2 px-3'
              onClick={()=>{
               deleteHendle(i)
